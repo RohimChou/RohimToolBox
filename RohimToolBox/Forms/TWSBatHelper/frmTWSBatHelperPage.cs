@@ -28,6 +28,7 @@ namespace RohimToolBox.Forms.TWSBatHelper {
       this.lvwFiles.FullRowSelect = true;
       this.lvwFiles.Font = new Font("Consolas", 10f);
       this.lvwFiles.Columns.Add(new ColumnHeader { Text = "Name", Width = 200 });
+      this.lvwFiles.Columns.Add(new ColumnHeader { Text = "Size", Width = 90 });
       this.ilstLvwFiles = new ImageList();
       this.ilstLvwFiles.Images.Add($"{FileSystemItemType.Folder}", Resources.icon_folder);
       this.ilstLvwFiles.Images.Add($"{FileSystemItemType.File}", Resources.icon_file);

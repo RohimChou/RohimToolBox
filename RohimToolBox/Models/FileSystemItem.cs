@@ -8,9 +8,10 @@ using System.Threading.Tasks;
 
 namespace RohimToolBox.Models {
   public class FileSystemItem {
-    public FileSystemItem(string fullPath, string itemName) {
+    public FileSystemItem(string fullPath, string itemName, long sizeInByte = 0) {
       this.FullPath = fullPath;
       this.ItemName = itemName;
+      this.ItemSize = sizeInByte;
     }
 
     private string fullPath;
@@ -50,5 +51,7 @@ namespace RohimToolBox.Models {
     /// Enum: Folder or File
     /// </summary>
     public FileSystemItemType ItemType { get; private set; }
+
+    public long ItemSize { get; set; }
   }
 }

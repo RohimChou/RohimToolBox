@@ -63,7 +63,7 @@ namespace RohimToolBox.Helper {
 
       string[] files = Directory.GetFiles(path);
       List<FileSystemItem> fileItems = files
-        .Select(filePath => new FileSystemItem(filePath, new FileInfo(filePath).Name))
+        .Select(filePath => new FileSystemItem(filePath, new FileInfo(filePath).Name, new FileInfo(filePath).Length))
         .ToList();
       results.AddRange(fileItems);
 
@@ -78,6 +78,29 @@ namespace RohimToolBox.Helper {
     public static string GetExtension(string path) {
       string fileExtension = Path.GetExtension(path);
       return fileExtension?.ToLower();
+    }
+
+    /// <summary>
+    /// https://stackoverflow.com/questions/468119/whats-the-best-way-to-calculate-the-size-of-a-directory-in-net
+    /// </summary>
+    /// <param name="d"></param>
+    /// <returns></returns>
+    public static async Task<long> GetDirectorySize(DirectoryInfo d) {
+      long size = 0;
+
+      // Add file sizes.
+      FileInfo[] fis = d.GetFiles();
+      foreach (FileInfo fi in fis) {
+        size += fi.Length;
+      }
+
+      // Add subdirectory sizes.
+      DirectoryInfo[] dis = d.GetDirectories();
+      foreach (DirectoryInfo di in dis) {
+        size += await GetDirectorySize(di);
+      }
+
+      return size;
     }
   }
 }

@@ -33,9 +33,21 @@ namespace RohimToolBox.Extensions {
           imageList.Images.Add(item.FileExtension, iconForItem.ToBitmap());
         }
 
-        listView.Items.Add(item.FullPath, item.ItemName, imageKey);
+        ListViewItem listViewItem = listView.Items.Add(item.FullPath, item.ItemName, imageKey);
+        string itemSize = FormatFileItemSize(item.ItemSize);
+        listViewItem.SubItems.Add(itemSize);
       }
       listView.EndUpdate();
+    }
+
+    private static string FormatFileItemSize(long itemSize) {
+      int sizeInKb = (int)Math.Round(itemSize / 1000d, MidpointRounding.AwayFromZero);
+      string result = $"{sizeInKb:N0} KB";
+
+      if (sizeInKb == 0) {
+        return null;
+      }
+      return result;
     }
   }
 }
