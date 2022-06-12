@@ -40,8 +40,9 @@ namespace RohimToolBox {
       this.pnlSide.Controls.Add(this.btnDiffSets);
       this.pnlSide.Dock = System.Windows.Forms.DockStyle.Left;
       this.pnlSide.Location = new System.Drawing.Point(0, 0);
+      this.pnlSide.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
       this.pnlSide.Name = "pnlSide";
-      this.pnlSide.Size = new System.Drawing.Size(135, 476);
+      this.pnlSide.Size = new System.Drawing.Size(180, 549);
       this.pnlSide.TabIndex = 1;
       // 
       // btnTWSBatHelper
@@ -50,9 +51,11 @@ namespace RohimToolBox {
       this.btnTWSBatHelper.Cursor = System.Windows.Forms.Cursors.Hand;
       this.btnTWSBatHelper.FlatAppearance.BorderSize = 0;
       this.btnTWSBatHelper.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-      this.btnTWSBatHelper.Location = new System.Drawing.Point(0, 65);
+      this.btnTWSBatHelper.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.btnTWSBatHelper.Location = new System.Drawing.Point(0, 75);
+      this.btnTWSBatHelper.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
       this.btnTWSBatHelper.Name = "btnTWSBatHelper";
-      this.btnTWSBatHelper.Size = new System.Drawing.Size(135, 25);
+      this.btnTWSBatHelper.Size = new System.Drawing.Size(180, 29);
       this.btnTWSBatHelper.TabIndex = 0;
       this.btnTWSBatHelper.Text = "TWSBatHelper";
       this.btnTWSBatHelper.UseVisualStyleBackColor = false;
@@ -64,9 +67,11 @@ namespace RohimToolBox {
       this.btnCheckDuplicates.Cursor = System.Windows.Forms.Cursors.Hand;
       this.btnCheckDuplicates.FlatAppearance.BorderSize = 0;
       this.btnCheckDuplicates.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-      this.btnCheckDuplicates.Location = new System.Drawing.Point(0, 34);
+      this.btnCheckDuplicates.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.btnCheckDuplicates.Location = new System.Drawing.Point(0, 39);
+      this.btnCheckDuplicates.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
       this.btnCheckDuplicates.Name = "btnCheckDuplicates";
-      this.btnCheckDuplicates.Size = new System.Drawing.Size(135, 25);
+      this.btnCheckDuplicates.Size = new System.Drawing.Size(180, 29);
       this.btnCheckDuplicates.TabIndex = 0;
       this.btnCheckDuplicates.Text = "CheckDuplicates";
       this.btnCheckDuplicates.UseVisualStyleBackColor = false;
@@ -78,9 +83,11 @@ namespace RohimToolBox {
       this.btnDiffSets.Cursor = System.Windows.Forms.Cursors.Hand;
       this.btnDiffSets.FlatAppearance.BorderSize = 0;
       this.btnDiffSets.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+      this.btnDiffSets.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.btnDiffSets.Location = new System.Drawing.Point(0, 3);
+      this.btnDiffSets.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
       this.btnDiffSets.Name = "btnDiffSets";
-      this.btnDiffSets.Size = new System.Drawing.Size(135, 25);
+      this.btnDiffSets.Size = new System.Drawing.Size(180, 29);
       this.btnDiffSets.TabIndex = 0;
       this.btnDiffSets.Text = "DiffSets";
       this.btnDiffSets.UseVisualStyleBackColor = false;
@@ -89,21 +96,22 @@ namespace RohimToolBox {
       // pnlMain
       // 
       this.pnlMain.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.pnlMain.Location = new System.Drawing.Point(135, 0);
+      this.pnlMain.Location = new System.Drawing.Point(180, 0);
+      this.pnlMain.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
       this.pnlMain.Name = "pnlMain";
-      this.pnlMain.Padding = new System.Windows.Forms.Padding(5, 0, 5, 5);
-      this.pnlMain.Size = new System.Drawing.Size(849, 476);
+      this.pnlMain.Padding = new System.Windows.Forms.Padding(7, 0, 7, 6);
+      this.pnlMain.Size = new System.Drawing.Size(1132, 549);
       this.pnlMain.TabIndex = 2;
       // 
       // frmMain
       // 
-      this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+      this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-      this.ClientSize = new System.Drawing.Size(984, 476);
+      this.ClientSize = new System.Drawing.Size(1312, 549);
       this.Controls.Add(this.pnlMain);
       this.Controls.Add(this.pnlSide);
       this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-      this.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+      this.Margin = new System.Windows.Forms.Padding(1);
       this.Name = "frmMain";
       this.Text = "RohimToolBox";
       this.pnlSide.ResumeLayout(false);
