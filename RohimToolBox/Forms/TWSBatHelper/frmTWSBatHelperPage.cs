@@ -155,5 +155,14 @@ namespace RohimToolBox.Forms.TWSBatHelper {
       List<FileSystemItem> firstLvlItems = PathHelper.GetFirstLevelItems(dirPath);
       listView.SetItems(firstLvlItems);
     }
+
+	private void lvwFiles_KeyDown(object sender, KeyEventArgs e) {
+      // ctrl+a: select all
+      if (e.Control && e.KeyCode == Keys.A) {
+        foreach (ListViewItem item in this.lvwFiles.Items) {
+          item.Selected = true;
+        }
+      }
+    }
   }
 }

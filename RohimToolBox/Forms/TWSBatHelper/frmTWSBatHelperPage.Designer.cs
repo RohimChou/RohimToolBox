@@ -102,6 +102,7 @@ namespace RohimToolBox.Forms.TWSBatHelper
       this.lvwFiles.TabIndex = 3;
       this.lvwFiles.UseCompatibleStateImageBehavior = false;
       this.lvwFiles.ItemActivate += new System.EventHandler(this.lvwFiles_ItemActivate);
+      this.lvwFiles.KeyDown += new System.Windows.Forms.KeyEventHandler(this.lvwFiles_KeyDown);
       // 
       // splitContainer2
       // 
