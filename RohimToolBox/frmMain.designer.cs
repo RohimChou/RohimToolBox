@@ -52,7 +52,7 @@ namespace RohimToolBox {
       this.btnTWSBatHelper.FlatAppearance.BorderSize = 0;
       this.btnTWSBatHelper.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
       this.btnTWSBatHelper.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.btnTWSBatHelper.Location = new System.Drawing.Point(0, 75);
+      this.btnTWSBatHelper.Location = new System.Drawing.Point(0, 3);
       this.btnTWSBatHelper.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
       this.btnTWSBatHelper.Name = "btnTWSBatHelper";
       this.btnTWSBatHelper.Size = new System.Drawing.Size(180, 29);
@@ -84,7 +84,7 @@ namespace RohimToolBox {
       this.btnDiffSets.FlatAppearance.BorderSize = 0;
       this.btnDiffSets.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
       this.btnDiffSets.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.btnDiffSets.Location = new System.Drawing.Point(0, 3);
+      this.btnDiffSets.Location = new System.Drawing.Point(0, 75); 
       this.btnDiffSets.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
       this.btnDiffSets.Name = "btnDiffSets";
       this.btnDiffSets.Size = new System.Drawing.Size(180, 29);
