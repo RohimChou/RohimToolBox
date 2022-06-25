@@ -34,6 +34,12 @@ namespace RohimToolBox.Forms.TWSBatHelper {
       this.ilstLvwFiles.Images.Add($"{FileSystemItemType.File}", Resources.icon_file);
       this.ilstLvwFiles.ImageSize = new Size(18, 18);
       this.lvwFiles.SmallImageList = ilstLvwFiles;
+
+      // initialize statusstrip
+      this.statusStrip1.LayoutStyle = ToolStripLayoutStyle.HorizontalStackWithOverflow;
+      this.toolStripStatusLabel1.Alignment = ToolStripItemAlignment.Right;
+      this.toolStripStatusLabel1.Text = $"0 selected ";
+
       // load root drives
       this.LoadRootDrives(this.lvwFiles);
     }
@@ -163,6 +169,12 @@ namespace RohimToolBox.Forms.TWSBatHelper {
           item.Selected = true;
         }
       }
+    }
+
+	private void lvwFiles_SelectedIndexChanged(object sender, EventArgs e) {
+      // show selected files count
+      this.toolStripStatusLabel1.Text =
+        $"{this.lvwFiles.SelectedItems.Count} selected ";
     }
   }
 }
