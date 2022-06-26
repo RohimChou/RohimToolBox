@@ -49,6 +49,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CustControls\CenterWinDialog.cs" />
     <Compile Include="CustControls\RoundButton.cs">
       <SubType>Component</SubType>
     </Compile>

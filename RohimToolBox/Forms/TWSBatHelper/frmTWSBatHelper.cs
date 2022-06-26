@@ -1,5 +1,6 @@
 ﻿using RohimToolBox.CustControls;
 using System;
+using System.Threading;
 using System.Windows.Forms;
 
 namespace RohimToolBox.Forms.TWSBatHelper {
@@ -18,7 +19,11 @@ namespace RohimToolBox.Forms.TWSBatHelper {
 		private void btnHelp_Click(object sender, EventArgs e) {
 			string text = "Select All Folders & Files\t\tCtrl + A\r\n" +
 				"Copy Folders or Files\t\tCtrl + C\r\n";
-			MessageBox.Show(text, "Shortcut Keys");
+
+			Form owner = this.ParentForm ?? this;
+			using (new CenterWinDialog(owner)) {
+				MessageBox.Show(text, "Shortcut Keys");
+			}
 		}
 	}
 }
