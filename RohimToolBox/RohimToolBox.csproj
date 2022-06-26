@@ -49,6 +49,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CustControls\RoundButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Enums\FileSystemItemType.cs" />
     <Compile Include="Extensions\ListViewExtensions.cs" />
     <Compile Include="Forms\CheckDuplicates\frmCheckDuplicates.cs">

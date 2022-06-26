@@ -172,9 +172,7 @@ namespace RohimToolBox.Forms.TWSBatHelper {
     }
 
 	private void lvwFiles_SelectedIndexChanged(object sender, EventArgs e) {
-      // show selected files count
-      this.toolStripStatusLabel1.Text =
-        $"{this.lvwFiles.SelectedItems.Count} selected ";
-    }
+
+	}
   }
 }
