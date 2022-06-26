@@ -4,12 +4,12 @@ using System.Threading;
 using System.Windows.Forms;
 
 namespace RohimToolBox.Forms.TWSBatHelper {
-	public partial class frmTWSBatHelper : Form {
-		public frmTWSBatHelper() {
+	public partial class frmFileExplorer : Form {
+		public frmFileExplorer() {
 			InitializeComponent();
 
 			// add frmTWSBatHelperPage to first tab
-			frmTWSBatHelperPage page1 = new frmTWSBatHelperPage();
+			frmFileExplorerPage page1 = new frmFileExplorerPage();
 			page1.TopLevel = false;
 			page1.Dock = DockStyle.Fill;
 			page1.Show();

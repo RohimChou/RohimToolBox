@@ -1,7 +1,7 @@
 ﻿
 namespace RohimToolBox.Forms.TWSBatHelper
 {
-    partial class frmTWSBatHelper
+    partial class frmFileExplorer
     {
         /// <summary>
         /// Required designer variable.

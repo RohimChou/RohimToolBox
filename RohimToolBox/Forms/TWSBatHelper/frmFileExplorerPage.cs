@@ -16,11 +16,11 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace RohimToolBox.Forms.TWSBatHelper {
-	public partial class frmTWSBatHelperPage : Form {
+	public partial class frmFileExplorerPage : Form {
 		public readonly string SEARCH_PLACEHOLDER = "Search...";
 		private ImageList ilstLvwFiles;
 
-		public frmTWSBatHelperPage() {
+		public frmFileExplorerPage() {
 			InitializeComponent();
 
 			// initialize listview

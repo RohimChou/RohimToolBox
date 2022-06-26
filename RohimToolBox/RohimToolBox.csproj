@@ -67,17 +67,17 @@
     <Compile Include="Forms\DiffSets\frmDiffSets.Designer.cs">
       <DependentUpon>frmDiffSets.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\TWSBatHelper\frmTWSBatHelper.cs">
+    <Compile Include="Forms\TWSBatHelper\frmFileExplorer.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\TWSBatHelper\frmTWSBatHelper.Designer.cs">
-      <DependentUpon>frmTWSBatHelper.cs</DependentUpon>
+    <Compile Include="Forms\TWSBatHelper\frmFileExplorer.Designer.cs">
+      <DependentUpon>frmFileExplorer.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\TWSBatHelper\frmTWSBatHelperPage.cs">
+    <Compile Include="Forms\TWSBatHelper\frmFileExplorerPage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\TWSBatHelper\frmTWSBatHelperPage.Designer.cs">
-      <DependentUpon>frmTWSBatHelperPage.cs</DependentUpon>
+    <Compile Include="Forms\TWSBatHelper\frmFileExplorerPage.Designer.cs">
+      <DependentUpon>frmFileExplorerPage.cs</DependentUpon>
     </Compile>
     <Compile Include="frmMain.cs">
       <SubType>Form</SubType>
@@ -95,11 +95,11 @@
     <EmbeddedResource Include="Forms\DiffSets\frmDiffSets.resx">
       <DependentUpon>frmDiffSets.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\TWSBatHelper\frmTWSBatHelper.resx">
-      <DependentUpon>frmTWSBatHelper.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\TWSBatHelper\frmFileExplorer.resx">
+      <DependentUpon>frmFileExplorer.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\TWSBatHelper\frmTWSBatHelperPage.resx">
-      <DependentUpon>frmTWSBatHelperPage.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\TWSBatHelper\frmFileExplorerPage.resx">
+      <DependentUpon>frmFileExplorerPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>

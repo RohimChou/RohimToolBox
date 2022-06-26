@@ -10,7 +10,7 @@ namespace RohimToolBox
         public frmMain()
         {
             InitializeComponent();
-            this.LoadForm(new frmTWSBatHelper());
+            this.LoadForm(new frmFileExplorer());
         }
 
         private void btnDiffSets_Click(object sender, System.EventArgs e)
@@ -25,7 +25,7 @@ namespace RohimToolBox
 
         private void btnTWSBatHelper_Click(object sender, System.EventArgs e)
         {
-            this.LoadForm(new frmTWSBatHelper());
+            this.LoadForm(new frmFileExplorer());
         }
 
         private void LoadForm(Form form)
