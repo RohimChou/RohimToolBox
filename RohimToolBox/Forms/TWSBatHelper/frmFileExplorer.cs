@@ -17,8 +17,10 @@ namespace RohimToolBox.Forms.TWSBatHelper {
 		}
 
 		private void btnHelp_Click(object sender, EventArgs e) {
-			string text = "Select All Folders & Files\t\tCtrl + A\r\n" +
-				"Copy Folders or Files\t\tCtrl + C\r\n";
+			string text =
+				$"Select All Folders & Files\tCtrl + A{Environment.NewLine}" +
+				$"Copy Files\t\tCtrl + C{Environment.NewLine}" +
+				$"Copy Files Paths\t\tCtrl + Shift + C{Environment.NewLine}";
 
 			Form owner = this.ParentForm ?? this;
 			using (new CenterWinDialog(owner)) {

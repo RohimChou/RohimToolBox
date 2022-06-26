@@ -1,10 +1,12 @@
-﻿using RohimToolBox.Enums;
+﻿using RohimToolBox.CustControls;
+using RohimToolBox.Enums;
 using RohimToolBox.Extensions;
 using RohimToolBox.Helper;
 using RohimToolBox.Models;
 using RohimToolBox.Properties;
 using System;
 using System.Collections.Generic;
+using System.Collections.Specialized;
 using System.ComponentModel;
 using System.Data;
 using System.Diagnostics;
@@ -170,7 +172,39 @@ namespace RohimToolBox.Forms.TWSBatHelper {
 				}
 			}
 
+			// ctrl+c: copy files
+			if (e.Control && e.KeyCode == Keys.C) {
+				if (this.lvwFiles.SelectedItems.Count > 0) {
+					StringCollection fileFullPathsCollection = new StringCollection();
+					this.lvwFiles
+						.SelectedItems
+						.OfType<ListViewItem>()
+						.ToList()
+						.ForEach(x => fileFullPathsCollection.Add(x.Name));
 
+					Clipboard.SetFileDropList(fileFullPathsCollection);
+
+					this.toolStripStatusLabel1.Text =
+						$"{this.lvwFiles.SelectedItems.Count} Items Copied! ";
+				}
+			}
+
+			// ctrl+shift+c: copy files's paths
+			if (e.Control && e.Shift && e.KeyCode == Keys.C) {
+				if (this.lvwFiles.SelectedItems.Count > 0) {
+					List<string> filePullPaths = this.lvwFiles
+					.SelectedItems
+					.OfType<ListViewItem>()
+					.Select(x => x.Name)
+					.ToList();
+
+					string filePullPathsStr = string.Join(Environment.NewLine, filePullPaths);
+					Clipboard.SetText(filePullPathsStr);
+
+					this.toolStripStatusLabel1.Text =
+						$"{this.lvwFiles.SelectedItems.Count} Paths Copied! ";
+				}
+			}
 		}
 
 		private void lvwFiles_SelectedIndexChanged(object sender, EventArgs e) {
